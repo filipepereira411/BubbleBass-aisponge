@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubblasear o BubbleBass</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2c3e50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+            max-width: 500px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        h1 {
+            color: #2980b9;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .status {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .step {
+            background: rgba(255, 255, 255, 0.9);
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .step:hover {
+            transform: translateY(-3px);
+        }
+        .highlight {
+            font-weight: bold;
+            color: #e67e22;
+        }
+        .bubble-effect {
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Calma, BubbleBass! 🫧</h1>
+    <div class="status">A iniciar processo de <strong>bubblasear</strong> (<em>bubblessing</em>)... Borbulhando...</div>
+
+    <div class="step">
+        <p>Now now <span class="highlight">BubbleBass</span>, let's not overreact here.</p>
+    </div>
+
+    <div class="step">
+        <p>First, take a deep breath, inhaling through your nose and exhaling through your mouth.</p>
+    </div>
+
+    <div class="step">
+        <p>Feel the oxygen fill your lungs, then, slow release. 🫁</p>
+    </div>
+
+    <div class="step">
+        <p>Next, close your eyes and picture a happy... <span class="bubble-effect">🫧</span></p>
+    </div>
+</div>
+
+</body>
+</html>
